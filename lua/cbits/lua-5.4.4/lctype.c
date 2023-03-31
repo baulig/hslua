@@ -12,6 +12,17 @@
 
 #include "lctype.h"
 
+/*
+** Work-around for a compilation problem on OpenBSD.
+**
+** See https://github.com/baulig/const-test for details.
+*/
+int
+martin_dummy_ctype (void)
+{
+  return 1;
+}
+
 #if !LUA_USE_CTYPE	/* { */
 
 #include <limits.h>

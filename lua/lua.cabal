@@ -184,7 +184,7 @@ library
   if os(darwin)
     cc-options:          -DLUA_USE_MACOSX
 
-  if os(freebsd)
+  if os(freebsd) || os(openbsd)
     cc-options:          -DLUA_USE_POSIX
     if flag(export-dynamic)
       ld-options:        -Wl,-E
