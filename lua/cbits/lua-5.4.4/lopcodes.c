@@ -12,6 +12,17 @@
 
 #include "lopcodes.h"
 
+/*
+** Work-around for a compilation problem on OpenBSD.
+**
+** See https://github.com/baulig/const-test for details.
+*/
+int
+martin_dummy_opcodes (void)
+{
+  return 1;
+}
+
 
 /* ORDER OP */
 

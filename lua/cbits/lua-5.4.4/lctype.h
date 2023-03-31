@@ -11,6 +11,15 @@
 
 
 /*
+** Work-around for a compilation problem on OpenBSD.
+**
+** See https://github.com/baulig/const-test for details.
+*/
+extern int martin_dummy_ctype (void);
+
+
+
+/*
 ** WARNING: the functions defined here do not necessarily correspond
 ** to the similar functions in the standard C ctype.h. They are
 ** optimized for the specific needs of Lua.

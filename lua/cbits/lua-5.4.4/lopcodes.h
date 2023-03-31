@@ -10,6 +10,15 @@
 #include "llimits.h"
 
 
+/*
+** Work-around for a compilation problem on OpenBSD.
+**
+** See https://github.com/baulig/const-test for details.
+*/
+extern int martin_dummy_opcodes (void);
+
+
+
 /*===========================================================================
   We assume that instructions are unsigned 32-bit integers.
   All instructions have an opcode in the first 7 bits.
